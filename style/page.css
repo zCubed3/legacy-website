@@ -1,0 +1,39 @@
+body {
+    background: rgb(45,29,98);
+    background: linear-gradient(180deg, rgba(45,29,98,1) 0%, rgba(108,63,255,1) 100%);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+}
+
+div.flex_grid {
+    flex-direction: column;
+
+    left: 50%;
+    margin: auto;
+}
+
+div.flex_row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+project_card {
+    display: inline-block;
+    margin: 1rem;
+    padding: 1em;
+    width: 20em;
+
+    background: rgb(0, 0, 0, 0.7);
+
+    backdrop-filter: blur(5em);
+    filter: drop-shadow(0 0 0.5em black);
+
+    border-radius: 0.8em;
+}
+
+project_card.minor {
+    margin: 0.5rem;
+    width: 40em;
+}
