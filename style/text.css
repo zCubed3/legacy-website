@@ -10,3 +10,8 @@ html {
 .white {
     color: white;
 }
+
+.no-filter {
+    backdrop-filter: none;
+    filter: none;
+}
