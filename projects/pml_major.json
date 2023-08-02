@@ -1,0 +1,7 @@
+{
+  "get_base": "/projects/major/",
+  "schemas": [
+    "rt-everywhere.json",
+    "vat-kmotion.json"
+  ]
+}

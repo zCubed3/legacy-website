@@ -3,6 +3,14 @@ html {
     color: white;
 }
 
+a {
+    color: white;
+}
+
+h1 {
+    overflow: hidden;
+}
+
 .centered {
     text-align: center
 }

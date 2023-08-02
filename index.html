@@ -11,14 +11,23 @@
     <link rel="stylesheet" href="/style/text.css">
     <link rel="stylesheet" href="/style/page.css">
 
+    <script src="/scripts/main_page.js"></script>
+
     <link rel="icon" href="/assets/zCubed_Purple_64.gif" type="image/gif" />
   </head>
 
   <body>
+    <!-- This page had a nice fancy gradient until I found a webkit bug :P -->
+
+    <div class="background"></div>
+
     <h1 class="centered">
       zCubed (Liam)
     </h1>
+
     <img src="/assets/zCubed_Purple_512.gif" alt="zCubed Logo" class="centered" width="256"/>
+
+    <br/>
     <br/>
 
     <h1 class="centered">
@@ -27,7 +36,7 @@
 
     <div class="flex_grid">
       <div class="flex_row">
-        <project_card class="about_me centered">
+        <project_card class="auto_width centered">
           My username is "zCubed"
           <br/>
           My first name is "Liam"
@@ -117,83 +126,12 @@
       Major Projects
     </h1>
 
-    <div class="flex_grid">
-      <div class="flex_row">
-        <project_card>
-          <h1 class="centered no-top">
-            <a class="white" href="https://github.com/zCubed3/v502">
-              v502
-            </a>
-          </h1>
-          <h3 class="centered">
-            December 2022 - C99/C++17
-            <br/>
-            Working (Incomplete)
-          </h3>
-          <br/>
-          6502 simulation toolchain written in C99 with frontends written in C++17
-          <br/>
-          <br/>
-          Is capable of compiling and simulating most basic 6502 instructions, but lacks a complete ISA implementation
-        </project_card>
-        <project_card>
-          <h1 class="centered no-top">
-            <a class="white" href="https://github.com/zCubed3/rt-everywhere">
-              rt-everywhere
-            </a>
-          </h1>
-          <h3 class="centered">
-            July 2023 - C99
-            <br/>
-            Complete
-          </h3>
-          <br/>
-          Toy raytracer written in C99, ported to as many platforms as possible
-
-          <br/>
-          <br/>
-
-          Ported to the following:
-          <br/>
-          - Windows (Native and SDL)
-          <br/>
-          - macOS (Native and SDL)
-          <br/>
-          - Linux (SDL)
-          <br/>
-          - Nintendo 3DS (Native)
-        </project_card>
-      </div>
-      <div class="flex_row">
-        <project_card>
-          <h1 class="centered no-top">
-            <a class="white" href="https://github.com/VirtualAfterthoughts/VAT.kMotion">
-              VAT.kMotion (Fork)
-            </a>
-          </h1>
-          <h3 class="centered">
-            December 2022 - C#/HLSL
-            <br/>
-            Work In Progress
-          </h3>
-          <br/>
-          A fork of <a href="https://github.com/Kink3d/kMotion">Kink3d/kMotion</a>, better integrating it into <a href="https://github.com/VirtualAfterthoughts/VAT.CustomURP/">VAT.CustomURP</a>
-        </project_card>
-        <project_card>
-          <h1 class="centered no-top">
-            <a class="white" href="https://github.com/VirtualAfterthoughts/VAT.UnityGraphics/tree/zcubed/2021.3/staging">
-              VAT.CustomURP
-            </a>
-          </h1>
-          <h3 class="centered">
-            December 2022 - C#/HLSL
-            <br/>
-            Work In Progress
-          </h3>
-          <br/>
-          A fork of Unity's URP. Adding many thematic changes to better suit the style of VAT games
-        </project_card>
-      </div>
+    <div class="flex_grid" id="pl_major_container">
+      <h2 id="pl_major_warning" class="centered">
+        If you can't see anything here, your browser may not have client scripts enabled!
+        <br/>
+        Don't worry though, I'm working on a solution for you!!!
+      </h2>
     </div>
 
     <br/>
@@ -243,7 +181,7 @@
 
     <div class="flex_grid">
       <div class="flex_row">
-        <project_card class="social centered">
+        <project_card class="auto_width centered">
           <h3 class="no-top">Desktop</h3>
           Model: Custom Built
           <br/>
@@ -255,7 +193,7 @@
           <br/>
           OS: Windows 11 / Arch Linux
         </project_card>
-        <project_card class="social centered">
+        <project_card class="auto_width centered">
           <h3 class="no-top">Laptop</h3>
           Model: MacBook Air (2022)
           <br/>
@@ -268,6 +206,10 @@
           OS: macOS Ventura
         </project_card>
       </div>
+    </div>
+    <h1 class="centered">Credit</h1>
+    <div class="centered">
+      Fonts used, <a href="https://fonts.google.com/specimen/Montserrat">Montserrat</a>
     </div>
   </body>
 </html>

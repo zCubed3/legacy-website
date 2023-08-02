@@ -1,16 +1,25 @@
-body {
-    background: rgb(45,29,98);
-    background: linear-gradient(180deg, rgba(45,29,98,1) 0%, rgba(108,63,255,1) 100%);
+html {
+    background: rgb(75, 41, 175);
+
+    /* TODO: Find a bug fix for WebKit gradients */
+    /* background: linear-gradient(180deg, rgba(45,29,98,1) 0%, rgba(108,63,255,1) 100%); */
+
     background-repeat: no-repeat;
     background-attachment: scroll;
-    background-size: cover;
+}
+
+split {
+    display: block;
+    width: 100%;
+    background-color: rgb(55, 29, 128);
+    text-align: center;
+    color: #ffffff;
+    height: 2px;
+    border-radius: 5em;
 }
 
 div.flex_grid {
     flex-direction: column;
-
-    left: 50%;
-    margin: auto;
 }
 
 div.flex_row {
@@ -27,17 +36,30 @@ project_card {
 
     /* background: rgb(21, 20, 20); */
 
-    background: rgb(0, 0, 0, 0.8);
-    background: rgba(7, 7, 7, 0.8);
+    /* background: rgb(0, 0, 0, 0.8); */
+    background: rgb(21, 14, 41);
 
-    backdrop-filter: blur(5em);
+    /* backdrop-filter: blur(5em); */
 
-    filter: drop-shadow(-0.2em 0.2em 0.2em rgba(0, 0, 0, 0.3))
-            drop-shadow(0.2em 0.2em 0.2em rgba(0, 0, 0, 0.3))
-            drop-shadow(0.2em -0.2em 0.2em rgba(0, 0, 0, 0.3))
+    /* This filter makes it appear elevated */
+    filter: drop-shadow(-0.2em 0.2em 0.2em rgba(0, 0, 0, 0.35))
+            drop-shadow(0.2em 0.2em 0.2em rgba(0, 0, 0, 0.35))
+            drop-shadow(0.2em -0.2em 0.2em rgba(0, 0, 0, 0.35))
             drop-shadow(-0.2em -0.2em 0.2em rgba(108, 63, 255, 1));
 
+    /* This filter makes it appear sunken in */
+    /*
+    filter: drop-shadow(0.2em -0.2em 0.2em rgba(0, 0, 0, 0.35))
+            drop-shadow(-0.2em -0.2em 0.2em rgba(0, 0, 0, 0.35))
+            drop-shadow(-0.2em 0.2em 0.2em rgba(0, 0, 0, 0.35))
+            drop-shadow(0.2em 0.2em 0.2em rgba(108, 63, 255, 1));
+    */
+
     border-radius: 1em;
+}
+
+project_card.auto_width {
+    width: auto;
 }
 
 project_card.about_me {
@@ -45,12 +67,12 @@ project_card.about_me {
 }
 
 project_card.social {
-    width: 17.5em;
+    width: 12.5em;
 }
 
 project_card.minor {
     margin: 0.5rem;
-    width: 40em;
+    width: 35em;
 }
 
 project_card.video_card {
