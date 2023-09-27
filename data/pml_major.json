@@ -1,5 +1,5 @@
 {
-  "get_base": "/projects/major/",
+  "get_base": "/data/pl_major/",
   "schemas": [
     "rt-everywhere.json",
     "vat-kmotion.json"
